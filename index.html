@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - cloth simulation</title>
+		<title>ThreeJS - Vernet</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
 			body {
-				background-color: #cce0ff;
+				background-color: #000;
 				color: #000;
 			}
 			a {
@@ -17,10 +17,6 @@
 	</head>
 
 	<body>
-		<div id="info">Simple Cloth Simulation<br/>
-			Verlet integration with relaxed constraints<br/>
-		</div>
-
 		<script type="module">
 
 			import * as THREE from 'https://threejs.org/build/three.module.js';
@@ -541,7 +537,7 @@
 
 				var gui = new GUI();
 				gui.add( params, 'enableWind' ).name( 'Enable wind' );
-				gui.add( params, 'showBall' ).name( 'Show ball' );
+				//gui.add( params, 'showBall' ).name( 'Show ball' );
 				//
 
 				if ( typeof TESTING !== 'undefined' ) {
